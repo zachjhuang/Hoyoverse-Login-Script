@@ -1,0 +1,29 @@
+{
+  "name": "hoyolab_bot",
+  "version": "1.0.0",
+  "main": "capturePostRequest.js",
+  "bin": "capturePostRequest.js",
+  "scripts": {
+    "start": "node capturePostRequest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachjhuang/hoyolab_bot.git"
+  },
+  "keywords": [],
+  "author": "Zach Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zachjhuang/hoyolab_bot/issues"
+  },
+  "homepage": "https://github.com/zachjhuang/hoyolab_bot#readme",
+  "description": "A Hoyolab login script for all applicable Hoyoverse games.",
+  "dependencies": {
+    "puppeteer": "^24.4.0"
+  },
+  "pkg": {
+    "assets": [
+      "!**/*.py"
+    ]
+  }
+}
