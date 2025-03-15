@@ -1,10 +1,16 @@
-import puppeteer from 'puppeteer';
-import fs from 'fs';
+// import puppeteer from 'puppeteer-core';
+const puppeteer = require('puppeteer-core');
+const fs = require('fs');
+// import fs from 'fs';
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({
+    headless: false,
+    executablePath: './chrome-win/chrome.exe',
+    defaultViewport: null,
+    args: ['--start-maximized']
+  });
   const page = await browser.newPage();
-
   await page.setRequestInterception(true);
 
   const urlPatterns = {
@@ -40,7 +46,7 @@ import fs from 'fs';
         postData: request.postData(),
       };
 
-      fs.writeFileSync(`requestData/requestData_${game}.json`, JSON.stringify(postData, null, 2));
+      fs.writeFileSync(`request_data/request_data_${game}.json`, JSON.stringify(postData, null, 2));
       console.log(`${game} sign-in request data saved to JSON file`);
     }
 
