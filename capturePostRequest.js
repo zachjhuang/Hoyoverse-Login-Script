@@ -41,7 +41,7 @@ import fs from 'fs';
       };
 
       fs.writeFileSync(`requestData/requestData_${game}.json`, JSON.stringify(postData, null, 2));
-      console.log('sign-in request data saved to JSON file');
+      console.log(`${game} sign-in request data saved to JSON file`);
     }
 
     request.continue();
