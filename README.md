@@ -63,3 +63,4 @@ Alternatively, **python** users can run **pip install requests** followed by **p
 # TODO
 - Linux/Mac support (unlikely)
 - Automated server with request data stored in database
+- reduce file size
