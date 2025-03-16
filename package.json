@@ -1,10 +1,10 @@
 {
   "name": "hoyolab_bot",
   "version": "1.0.0",
-  "main": "capturePostRequest.js",
-  "bin": "capturePostRequest.js",
+  "main": "./capture_sign_in_requests.mjs",
+  "bin": "./capture_sign_in_requests.mjs",
   "scripts": {
-    "start": "node capturePostRequest.js"
+    "start": "node capture_sign_in_requests.mjs"
   },
   "repository": {
     "type": "git",

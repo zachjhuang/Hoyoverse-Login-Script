@@ -1,2 +1,4 @@
 node_modules/
 request_data/*.json
+chrome-win/
+venv/
